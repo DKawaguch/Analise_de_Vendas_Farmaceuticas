@@ -47,8 +47,3 @@ Descrição detalhada das etapas seguidas no projeto, desde a coleta e limpeza d
 3. **Exploração de Dados:**
    - Principais insights obtidos durante a análise exploratória (EDA).
    - Gráficos e correlações importantes.
-     
-4. **Vizualização de Dados**
-   - a
-   - a
-   
