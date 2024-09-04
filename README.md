@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este é um projeto em formato de tarefa pela PoD Academy que tem como o objetivo tomar os primeiros passos em fazer uma análise de dados, desde a limpeza de dados até a análise exploratória e vizualização de dados, em um contexto de vendas farmacêuticas e por fim realizar uma apresentação de slides para simular o repasse de informações de um meio técnico para m corporativo. 
+Este é um projeto em formato de tarefa pela PoD Academy que tem como o objetivo tomar os primeiros passos em fazer uma análise de dados, desde a limpeza de dados até a análise exploratória e vizualização de dados, em um contexto de vendas farmacêuticas e por fim realizar uma apresentação de slides para simular o repasse de informações de um meio técnico para um meio corporativo. Vale ressaltar que é possível realizar a análise de forma bem mais aprofundada e com mais dados, no entanto aqui estou apenas me adaptando a como realizar uma análise.
 
 ## Estrutura do Projeto
 
@@ -45,5 +45,18 @@ Descrição detalhada das etapas seguidas no projeto, desde a coleta e limpeza d
        - Foram identificadso diversos outliers através de Boxplots apenas para as variáveis de quantidades vendidas e para idade, esses outliers foram interpretados como empreseas ao invés de pessoas físicas, mas dependendo do objetivo da análise usariamos os outliers ou não, portanto não houve um tratamento propriamente dito além da interpretação deles
   
 3. **Exploração de Dados:**
-   - Principais insights obtidos durante a análise exploratória (EDA).
-   - Gráficos e correlações importantes.
+   - Principais insights obtidos durante a análise exploratória (EDA):
+      - De acordo com o 'SEXO' pudemos ver que em geral quem compra remédios é o que possui valor '2', e de forma mais específica, no 'TIPO_RECEITUARIO = 4' temos a única contagem em que o 'SEXO = 1' fez mais compras
+      - Vemos também que com exceção dos valores muito baixos de idade, que faz com que a curva KDE cresca perto do 0, temos os maiores picos de compras entorno de 23 , e entorno de 43, podendo ser melhor analisado observado cruzando esse intevalo de 'IDADE' com outras variáveis.
+      - Em relação à localidade, vemos que de longe temos um consummo muito maior de medicamentos a região 'SUDESTE', em especial nos estados do Rio de Janeiro e São Paulo, provavelmente devido à quantia massiva de pessoas nesses lugares em relação ao resto do Brasil, podemos até realizar uma normalização e analisar a proporção de medicamentos em razão da população.
+      - É possível também analisar o tipo de problemas temos em certos sexos, idades e localidades baseado no principio ativo e sua urgencia baseado na quantidade de venda caso soubesse a utilidade de cada valor para essa variável
+      - O número gigante de valores nulos na variável CID10 indica simplesmente que esse valor não é obrigatório para a compra de um medicamento, a não ser que o tipo de receita seja diferente, como é o caso de remédios psiquiátricos que causam dependencia.
+
+
+ *(Auto-nota[Serve para o criador desse documento melhorar em análises futuras]: Pesquisar mais a fundo algumas variáveis antes de começar a análise, ir além no que pode ser feito como citado nos itens anteriores, e implementar a análise com mais dados do que os disponíveis)*
+   - Gráficos e correlações importantes:
+       - ![image](https://github.com/user-attachments/assets/91b63ae0-d56d-42eb-bf31-b670b0c3efed)
+       - ![image](https://github.com/user-attachments/assets/0a4123ff-895f-4d8e-84c0-a095d2379fc3)
+       - ![image](https://github.com/user-attachments/assets/ea9854c9-f6a1-41ff-8a64-25dbe84d4f34)
+       - ![image](https://github.com/user-attachments/assets/774de6e0-0e1c-42ab-96f3-eccf6c597ce2)
+       - ![image](https://github.com/user-attachments/assets/ab1fe029-6b49-4282-9de8-8450592e90fb)
